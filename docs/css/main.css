@@ -171,12 +171,7 @@ header {
   padding-top: 60px;
   padding-bottom: 240px;
   background: url("../img/header/lines.jpg") repeat-y center 0 / auto;
-}
-.header__content {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1600px;
-  background: url('../img/header/header-bg.png') no-repeat center 325px / auto;
+  overflow: hidden;
 }
 .header__nav-wrapper {
   padding-left: 15px;
@@ -436,6 +431,8 @@ header {
   top: 0;
 }
 .header__info {
+  position: relative;
+  z-index: 1;
   display: -webkit-box;
   display: -webkit-flex;
   display: -moz-box;
@@ -453,7 +450,6 @@ header {
      -moz-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 695px;
 }
 @media (min-width: 768px) {
   .header__info {
@@ -512,6 +508,13 @@ header {
      -moz-box-shadow: 0 0 5px #00aeff;
           box-shadow: 0 0 5px #00aeff;
   background-color: rgba(0, 174, 255, 0.527);
+}
+.header__bg-img {
+  margin-top: -110px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1600px;
 }
 .sections-skills__desc {
   width: 54%;
