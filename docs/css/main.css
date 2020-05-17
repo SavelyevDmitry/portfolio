@@ -747,7 +747,7 @@ header {
     margin-right: 80px;
   }
 }
-.section-portfolio__filters-item.active {
+.control-active {
   color: black;
 }
 .section-portfolio__projects-wrapper {
