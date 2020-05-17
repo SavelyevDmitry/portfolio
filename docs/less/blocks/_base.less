@@ -70,15 +70,15 @@ button{
     }
 }
 
-.conteiner{
-    max-width: 1140px;
+.container{
+    max-width: 1170px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 15px;
 
     // Платншет
     @media (min-width: 768px){
-        padding: 0 30px;
+        padding: 0 20px;
     }
 
     // Десктоп
@@ -94,17 +94,68 @@ button{
     &::after{
         content: "";
         position: absolute;
-        bottom: 22px;
+        bottom: 8px;
         left: -5px;
         right: -5px;
-        height: 10px;
+        height: 12px;
         background-color: rgb(0, 174, 255);
         z-index: -1;
+    }
+
+    // Планшет 
+    @media(min-width: 768px){
+        &::after{
+            bottom: 12px;
+        }
+    }
+
+    //Десктоп
+    @media(min-width: 1200px){
+        &::after{
+            bottom: 24px;
+        }
+    }
+}
+
+.title{
+    display: inline-block;
+    font-size: 42px;
+    font-weight: 800;
+    position: relative;
+    z-index: 2;
+
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 8px;        
+        left: -5px;
+        right: -5px;
+        height: 12px;
+        background-color: rgb(0, 174, 255);
+        z-index: -1;
+    }
+
+    // Планшет 
+    @media(min-width: 768px){
+        font-size: 52px;
+
+        &::after{
+            bottom: 13px;
+        }
+    }
+
+    //Десктоп
+    @media(min-width: 1200px){
+        font-size: 64px;
+
+        &::after{
+            bottom: 16px;
+        }
     }
 }
 
 .button-blue{
-    display: inline-block;
+    display: none;
     padding-left: 42px;
     padding-right: 42px;
     padding-top: 13px;
@@ -122,9 +173,15 @@ button{
         // box-shadow: 0 0 10px rgb(0, 225, 255);
         box-shadow: 0 0 15px rgb(0, 174, 255);
     }
+
+    //Десктоп
+    @media(min-width: 1200px){
+        display: inline-block;
+    }
 }
 
 .contacts-social-item{
+    margin-right: 30px;
     height: 50px;
     width: 50px;
     border-radius: 50%;
@@ -132,12 +189,29 @@ button{
     justify-content: center;
     align-items: center;
 
-    margin-right: 30px;
-
     transition: 0.3s;
+    
     &:hover{
         cursor: pointer;
         box-shadow: 0 0 10px rgb(0, 0, 0);
+    }
+
+    &:last-child{
+        margin-right: 0;
+    }
+}
+
+.contacts-social{
+    display: flex;
+
+    // Планшет 
+    @media(min-width: 768px){
+        margin-bottom: 24px;
+    }
+
+    //Десктоп
+    @media(min-width: 1200px){
+        margin-bottom: 25px;
     }
 }
 
@@ -164,4 +238,8 @@ button{
     background-color: #3b5998;
     color: white;
     font-size: 24px;
+}
+
+.none{
+    display: none;
 }

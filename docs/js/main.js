@@ -16,4 +16,33 @@ $(document).ready(function(){
         overLay.classList.remove('active');
     })
 
+    let containerEl = document.querySelector('#section-portfolio__projects-wrapper');
+    let mixer = mixitup(containerEl, {
+        classNames: {
+            block: ""
+        }
+    });
+
+    const filterToggles = document.querySelectorAll('.section-portfolio__filters button'); // все кнопки-переключатели
+    const portfolioBigCards = document.querySelectorAll('.section-portfolio__project '); // вс карточки  работ
+
+    for (let i = 0; i < filterToggles.length; i++) {
+
+        filterToggles[i].addEventListener('click', function () {
+            if (i == 0) {
+
+                for (let j = 0; j < 2; j++) {
+
+                    portfolioBigCards[j].classList.add('section-portfolio__project--big')
+                }
+
+            } else {
+
+                for (let j = 0; j < 2; j++) {
+                    portfolioBigCards[j].classList.remove('section-portfolio__project--big')
+                }
+            }
+        });
+    }
+
 }) 

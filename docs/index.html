@@ -17,7 +17,7 @@
 
             <!-- Навигация -->
             <div class="header__nav-wrapper">
-                <a href="#" class="header-logo">
+                <a href="./index.html" class="header-logo">
                     ДС
                 </a>
 
@@ -25,6 +25,27 @@
                     <a href="#" class="header__nav-item">Главная</a>
                     <a href="#" class="header__nav-item">Работы</a>
                     <a href="#" class="header__nav-item">Контакты</a>
+
+                    <div class="contacts-social">
+
+                        <a class="contacts-social-item contacts-social-item--github">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                        <a class="contacts-social-item contacts-social-item--telegram">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                        
+                        <a class="contacts-social-item contacts-social-item--vk">
+                            <i class="fab fa-vk"></i>
+                        </a>
+
+                        <a class="contacts-social-item contacts-social-item--facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        
+                    </div>
+
                 </nav>
 
                 <nav class="header__social">
@@ -40,7 +61,7 @@
             <!-- //Навигация -->
             
             <!-- Информация -->
-            <div class="conteiner">
+            <div class="container">
                
                 <div class="header__info">
                     <div class="header__info-photo-wrapper">
@@ -57,7 +78,7 @@
                         </div>
 
                         <div class="header__info-buttons">
-                            <a href="#" class="button-blue">Познакомиться</a>
+                            <a href="#skills" class="button-blue">Познакомиться</a>
                             <a href="#" class="header__button-contacts">Контакты</a>
                         </div>
                     </div>
@@ -72,19 +93,19 @@
             </div>
 
             <!-- Что умею и контакты -->
-            <div class="conteiner">
+            <div class="container">
                 
                 <div class="sections-skills__row">
                     <div class="sections-skills__desc">
 
-                        <h3 class="sections-skills__title-list">Что я умею:</h3>
+                        <h3 class="sections-skills__title-list" id="skills">Что я умею:</h3>
                         
                         <ul class="section-skills__list">
-                            <li class="section-skills__list-item">pixel perfect, полное соответствие макету.</li>
-                            <li class="section-skills__list-item">верстаю с сеткой или без.</li>
-                            <li class="section-skills__list-item">адаптивная верстка под мобильные устройства.</li>
-                            <li class="section-skills__list-item">оптимизация под retina экраны</li>
-                            <li class="section-skills__list-item">с Bootstrap и без него.</li>
+                            <li class="section-skills__list-item">Pixel perfect, полное соответствие макету.</li>
+                            <li class="section-skills__list-item">Верстаю с сеткой или без.</li>
+                            <li class="section-skills__list-item">Адаптивная верстка под мобильные устройства.</li>
+                            <li class="section-skills__list-item">Оптимизация под retina <br>  экраны</li>
+                            <li class="section-skills__list-item">С Bootstrap и без него.</li>
                         </ul>
 
                         <a href="#" class="button-blue">Смотреть работы</a>
@@ -92,7 +113,7 @@
 
                     <div class="section-skills__contacts">
                         <h3 class="sections-skills__title-social">На связи:</h3>
-                        <div class="section-skills__contacts-social">
+                        <div class="contacts-social">
 
                             <a class="contacts-social-item contacts-social-item--github">
                                 <i class="fab fa-github"></i>
@@ -120,8 +141,89 @@
             
         </header>
 
+        <main>
+            <div class="section-portfolio">
+
+                <!-- container -->
+                <div class="container">
+
+                    <div class="section-portfolio__title-wrapper">
+                        <h2 class="title">Портфолио</h2>
+                    </div>
+
+                    <!-- Фильтры -->
+                    <div class="section-portfolio__filters">
+                        <button class="section-portfolio__filters-item control-active" data-filter="all">Все работы</button>
+                        <button class="section-portfolio__filters-item" data-filter=".boots">Bootstrap</button>
+                        <button class="section-portfolio__filters-item" data-filter=".wp">WordPress</button>
+                        <button class="section-portfolio__filters-item" data-filter=".frontend">Frontend</button>
+                    </div>
+                    <!-- //Фильтры -->
+
+                    <!-- Работы -->
+                    <div class="section-portfolio__projects-wrapper" id="section-portfolio__projects-wrapper">
+
+                        <div class="section-portfolio__project section-portfolio__project--big mix boots">
+                            <a href="#" class="section-portfolio__project-img">
+                                <img src="./img/portfolio/img01.jpg" alt="Форест тревел">
+                                <button class="more-button">Смотреть проект</button>
+                            </a>                          
+                            <a href="#" class="section-portfolio__project-title">Верстка “Форест тревел”</a>
+                            <p class="section-portfolio__project-desc">Верстка многостраничного сайта.</p> 
+                        </div>
+
+                        <div class="section-portfolio__project section-portfolio__project--big mix frontend boots wp">
+                            <a href="#" class="section-portfolio__project-img">
+                                <img src="./img/portfolio/img02.jpg" alt="Сайт мечта">
+                                <button class="more-button">Смотреть проект</button>
+                            </a>
+                            <a href="#" class="section-portfolio__project-title">Сайт для коворкинга “Мечта”</a>
+                            <p class="section-portfolio__project-desc">Верстка лендинга.</p>
+                        </div>
+
+                        <div class="section-portfolio__project mix boots wp">
+                            <a href="#" class="section-portfolio__project-img">
+                                <img src="./img/portfolio/img3.jpg" alt="мир авто">
+                                <button class="more-button">Смотреть проект</button>
+                            </a>
+                            <a href="#" class="section-portfolio__project-title">Верстка “Мир Авто”</a>
+                            <p class="section-portfolio__project-desc">Верстка многостраничного сайта. </p>
+                        </div>
+
+                        <div class="section-portfolio__project mix frontend wp">
+                            <a href="#" class="section-portfolio__project-img">
+                                <img src="./img/portfolio/img04.jpg" alt="мир авто">
+                                <button class="more-button">Смотреть проект</button>
+                            </a>
+                            <a href="#" class="section-portfolio__project-title">Верстка “Мир Авто”</a>
+                            <p class="section-portfolio__project-desc">Верстка многостраничного сайта. </p>
+                        </div>
+
+                        <div class="section-portfolio__project mix frontend">
+                            <a href="#" class="section-portfolio__project-img">
+                                <img src="./img/portfolio/img05.jpg" alt="мир авто">
+                                <button class="more-button">Смотреть проект</button>
+                            </a>
+                            <a href="#" class="section-portfolio__project-title">Верстка “Мир Авто”</a>
+                            <p class="section-portfolio__project-desc">Верстка многостраничного сайта. </p>
+                        </div>
+
+                    </div>
+                    <!-- //Работы -->
+
+                    <div class="section-skills__all-project-wrapper">
+                        <a href="#" class="section-skills__all-project">Смотреть все работы</a>
+                    </div>
+
+                </div>
+                <!-- //container -->
+
+            </div>
+        </main>
+
         <!-- Vender scripts -->
         <script src="./libs/jquery/jquery-3.5.0.min.js"></script>
+        <script src="./libs/mixitup-3/mixitup3/mixitup.min.js"></script>
         <!-- // Vender scripts -->
 
         <!-- User scripts -->
