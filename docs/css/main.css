@@ -265,16 +265,18 @@ header {
   content: "";
   position: absolute;
   bottom: 10px;
-  left: 0px;
+  left: -3px;
   height: 10px;
-  width: 100%;
+  width: 107%;
   background-color: #00aeff;
   z-index: -1;
-  transition: 0.2s;
+  transition: 0.5s;
 }
 .header-logo:hover {
   cursor: pointer;
-  color: rgba(0, 0, 0, 0.747);
+}
+.header-logo:hover::after {
+  width: 0;
 }
 .header__nav {
   position: fixed;
@@ -295,6 +297,10 @@ header {
   font-weight: 700;
   transition: 0.5s;
 }
+.header__nav .section-skills__mail {
+  color: #00aeff;
+  display: none;
+}
 .header__nav .contacts-social {
   display: none;
 }
@@ -312,27 +318,39 @@ header {
     transform: translateX(0%);
   }
 }
+.header__nav .contacts-social {
+  margin-bottom: 30px;
+}
+.header__nav .contacts-social .contacts-social-item {
+  margin-right: 20px;
+}
 .header__nav.active {
   transform: translateX(0%);
+  padding-top: 110px;
 }
 .header__nav.active .contacts-social {
   display: flex;
 }
-.header__nav-item {
+.header__nav.active .section-skills__mail {
+  display: inline-block;
+}
+.header__nav.active .header__nav-item {
   margin-bottom: 10px;
+}
+.header__nav.active .header__nav-item:nth-last-child(3) {
+  margin-bottom: 40px;
+}
+.header__nav-item {
   position: relative;
   z-index: 2;
   color: black;
-}
-.header__nav-item:nth-last-child(2) {
-  margin-bottom: 20px;
 }
 @media (min-width: 1200px) {
   .header__nav-item {
     margin-right: 73px;
     margin-bottom: 0;
   }
-  .header__nav-item:last-child {
+  .header__nav-item:nth-last-child(3) {
     margin-right: 0;
   }
   .header__nav-item:nth-last-child(2) {
@@ -583,6 +601,8 @@ header {
   margin-bottom: 21px;
   line-height: 1.35;
   margin-bottom: 29px;
+  padding-top: 350px;
+  margin-top: -350px;
 }
 @media (min-width: 768px) {
   .sections-skills__title-list {
@@ -600,6 +620,7 @@ header {
 @media (min-width: 768px) {
   .section-skills__contacts {
     width: 45%;
+    max-width: 360px;
   }
 }
 .section-skills__contacts .contacts-social {
@@ -692,6 +713,8 @@ header {
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 40px;
+  padding-top: 60px;
+  margin-top: -60px;
 }
 @media (min-width: 768px) {
   .section-portfolio__title-wrapper {
@@ -795,7 +818,8 @@ header {
   .section-portfolio__project {
     max-width: unset;
     margin-bottom: 40px;
-    width: 30%;
+    width: 34%;
+    max-width: 360px;
   }
   .section-portfolio__project:last-child {
     display: block;
@@ -804,7 +828,8 @@ header {
 @media (min-width: 1200px) {
   .section-portfolio__project--big {
     font-size: 32px;
-    width: 47%;
+    width: 49%;
+    max-width: 555px;
   }
 }
 .section-portfolio__project-img {
