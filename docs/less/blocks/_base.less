@@ -154,6 +154,28 @@ button{
     }
 }
 
+.title--how-work{
+    font-size: 34px;
+    
+    &::after{
+        height: 10px;
+    }
+
+    // Планшет 
+    @media(min-width: 768px){
+        font-size: 52px;
+
+        &::after{
+            height: 12px;
+        }
+    }
+
+    //Десктоп
+    @media(min-width: 1200px){
+        font-size: 64px;
+    }
+}
+
 .button-blue{
     display: none;
     padding-left: 42px;
@@ -220,26 +242,42 @@ button{
     width: 46px;
     font-size: 50px;
     color: black;
+
+    &:visited{
+        color: black;
+    }
 }
 
 .contacts-social-item--telegram{
     background-color: #039be5;
     color: white;
     font-size: 30px;
+
+    &:visited{
+        color: white;
+    }
 }
 
 .contacts-social-item--vk{
     background-color: #4d76a1;
     color: white;
     font-size: 29px;
+
+    &:visited{
+        color: white;
+    }
 }
 
 .contacts-social-item--facebook{
     background-color: #3b5998;
     color: white;
     font-size: 24px;
+
+    &:visited{
+        color: white;
+    }
 }
 
 .none{
-    display: none;
+    display: none !important;
 }
