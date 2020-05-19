@@ -297,9 +297,15 @@ header{
     @media(min-width: 1200px){
         max-width: unset;
     }
+
+    &:hover .header__info-photo-wrapper .header__info-photo{
+        border-radius: 50%;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+    }
 }
 
 .header__info-photo-wrapper{
+
     max-width: 400px;
     margin-bottom: 51px;
 
@@ -314,6 +320,10 @@ header{
     @media(min-width: 1200px){
 
     }
+}
+
+.header__info-photo{
+    transition: 1.5s;
 }
 
 .header__info-content-wrapper{

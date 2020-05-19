@@ -98,6 +98,9 @@ button {
     bottom: 24px;
   }
 }
+.underline--name::after {
+  left: -9px;
+}
 .title {
   display: inline-block;
   font-size: 42px;
@@ -495,6 +498,10 @@ header {
     max-width: unset;
   }
 }
+.header__info:hover .header__info-photo-wrapper .header__info-photo {
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
 .header__info-photo-wrapper {
   max-width: 400px;
   margin-bottom: 51px;
@@ -505,6 +512,9 @@ header {
     width: 41%;
     max-width: 460px;
   }
+}
+.header__info-photo {
+  transition: 1.5s;
 }
 .header__info-content-wrapper {
   max-width: 400px;
