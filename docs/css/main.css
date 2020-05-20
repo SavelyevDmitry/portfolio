@@ -853,9 +853,6 @@ header {
     margin-bottom: 25px;
     font-size: 24px;
   }
-  .section-portfolio__project:last-child {
-    display: none;
-  }
 }
 @media (min-width: 1200px) {
   .section-portfolio__project {
@@ -863,9 +860,6 @@ header {
     margin-bottom: 40px;
     width: 34%;
     max-width: 360px;
-  }
-  .section-portfolio__project:last-child {
-    display: block;
   }
 }
 @media (min-width: 1200px) {
@@ -878,7 +872,7 @@ header {
 .section-portfolio__project-img {
   display: block;
   position: relative;
-  overflow: hidden;
+  overflow: hidden hidden;
   margin-bottom: 20px;
 }
 .section-portfolio__project-img::before {
@@ -956,6 +950,7 @@ header {
   max-width: 360px;
   margin-left: auto;
   margin-right: auto;
+  display: none;
 }
 @media (min-width: 768px) {
   .section-skills__all-project-wrapper {
