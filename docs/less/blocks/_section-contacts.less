@@ -1,0 +1,358 @@
+.contacts{
+    padding-top: 50px;
+    padding-bottom: 60px;
+    background-color: #f4f8f9;
+
+    // Планшет 
+    @media(min-width: 768px){
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    //Десктоп
+    @media(min-width: 1200px){
+        padding-top: 131px;
+        padding-bottom: 150px;
+        background:  url("../img/contacts/bg-contacts.jpg") repeat-y center 0 / auto;
+        background-color: #f4f8f9;
+    }
+}
+
+.contacts__title-wrapper{
+    text-align: center;
+    padding-top: 60px;
+    margin-top: -60px;
+    margin-bottom: 50px;
+
+    // Планшет 
+    @media(min-width: 768px){
+        margin-bottom: 60px;
+    }
+
+    //Десктоп
+    @media(min-width: 1200px){
+        margin-bottom: 53px;
+    }
+}
+
+.contacts__content-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+
+    // Планшет 
+    @media(min-width: 768px){
+        max-width: 900px;
+        text-align: unset;
+        flex-direction: row;
+    }
+
+    //Десктоп
+    @media(min-width: 1200px){
+        max-width: unset;
+    }
+}
+
+.contacts__desc{
+    position: relative;
+
+    // Планшет 
+    @media(min-width: 768px){
+        width: calc(~"50% - 15px");
+    }
+
+    //Десктоп
+    @media(min-width: 1200px){
+        padding-top: 25px;
+    }
+}
+
+.contacts__desc .contacts-social{
+    justify-content: center;
+    margin-bottom: 50px;
+
+    // Планшет 
+    @media(min-width: 768px){
+        justify-content: unset;
+        margin-bottom: 0;
+    }
+}
+
+.contacts__desc-img{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -350px;
+
+    //Десктоп
+    @media(min-width: 1200px){
+        display: block;
+    }
+}
+
+.contacts__form-wrapper{
+
+    // Планшет 
+    @media(min-width: 768px){
+        width: calc(~"50% - 15px");
+    }
+}
+
+.contacts__form{
+    padding-top: 50px;
+    padding-bottom: 40px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 28px 100px 0px rgba(194, 219, 235, 0.6);
+    transition: 1s;
+
+    &:hover{
+        box-shadow: 0px 28px 100px 0px rgba(0, 174, 255, 0.404);
+    }
+
+    // Планшет 
+    @media(min-width: 768px){
+
+    }
+
+    //Десктоп
+    @media(min-width: 1200px){
+        width: 92%;
+    }
+}
+
+.contacts__form-item{
+    width: 85%;
+    margin-bottom: 32px;
+    position: relative;
+
+    &:last-child{
+        margin-bottom: 0;
+    }
+
+    // Планшет 
+    @media(min-width: 768px){
+        margin-bottom: 32px;
+
+        &:nth-last-child(2){
+            margin-bottom: 12px;
+        }
+    }
+
+    //Десктоп
+    @media(min-width: 1200px){
+        margin-bottom: 56px;
+        width: 76%;
+
+        &:nth-last-child(2){
+            margin-bottom: 56px;
+        }
+    }
+}
+
+.contacts__form-field{
+    cursor: pointer;
+    width: 100%;
+    height: 52px;
+    border: 0;
+    border-bottom: 2px solid #bcbcbc;
+
+    padding-left: 5px;
+    font-weight: 700;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 20px;
+    line-height: 1;
+    color: black;
+    transition: 1s;
+
+    outline: none;
+
+    &:hover{
+        border-bottom: 2px solid rgb(0, 102, 255);
+    }
+
+    &:hover ~ .fake-placeholder{
+        color: rgb(0, 102, 255);
+    }
+}
+
+.contacts__form-field--area{
+    resize: none;
+    height: 130px;
+
+    // Планшет 
+    @media(min-width: 768px){
+
+    }
+
+    //Десктоп
+    @media(min-width: 1200px){
+        height: 115px;
+    }
+}
+
+.fake-placeholder{
+    position: absolute;
+    top: 16px;
+    left: 5px;
+
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 700;
+    color: #bcbcbc;
+
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.fake-placeholder.fake-placeholder--area.active{
+    top: -20px;
+}
+
+
+.fake-placeholder.active{
+    color: rgb(0, 102, 255);
+    font-size: 16px;
+    top: -16px;
+}
+
+.contacts__form-button{
+    align-self: flex-start;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    //Десктоп
+    @media(min-width: 1200px){
+        justify-content: flex-start;
+        margin-left: 57px;
+    }
+}
+
+.contacts__form-button-elem{
+    height: 54px;
+    color: black;
+    width: 85%;
+
+    background-color: rgb(0, 174, 255);
+    border-radius: 27px;
+    border: none;
+
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1;
+    transition: 0.5s;
+
+    cursor: pointer;
+
+    &:hover{
+        // box-shadow: 0 0 10px rgb(0, 225, 255);
+        box-shadow: 0 0 15px rgb(0, 174, 255);
+    }
+
+    // Планшет 
+    @media(min-width: 768px){
+        font-size: 20px;
+    }
+
+    //Десктоп
+    @media(min-width: 1200px){
+        font-size: 18px;
+        width: unset;
+        height: 64px;
+        padding-left: 42px;
+        padding-right: 42px;
+        border-radius: 30.5px;
+    }
+}
+
+.contacts__desc-text{
+    margin-bottom: 20px;
+    max-width: 510px;
+    font-size: 16px;
+    line-height: 1.62;
+
+    // Планшет 
+    @media(min-width: 768px){
+        font-size: 18px;
+        line-height: 1.56;
+        margin-bottom: 30px;
+    }
+
+    //Десктоп
+    @media(min-width: 1200px){
+        font-size: 20px;
+        line-height: 1.6;
+        margin-bottom: 40px;
+    }
+}
+
+.contacts__desc-contacts-wrap{
+    margin-bottom: 45px;
+}
+
+.contacts__desc-contacts-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 18px;
+
+    &:hover .contacts__desc-contacts-item-link::after{
+        width: 100%;
+    } 
+
+    // Планшет 
+    @media(min-width: 768px){
+        align-items: unset;
+    }
+
+    //Десктоп
+    @media(min-width: 1200px){
+        font-size: 20px;
+        flex-direction: row;
+        margin-bottom: 22px;
+    }
+}
+
+.contacts__desc-contacts-item-name{
+    width: 35%;
+    font-weight: 700;
+}
+
+.contacts__desc-contacts-item-link{
+    color: rgb(0, 174, 255);
+    position: relative;
+    z-index: 2;
+    font-weight: 500;
+
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 2px;        
+        left: 0;
+        width: 0%;
+        height: 2px;
+        background-color: rgb(0, 174, 255);
+        z-index: -1;
+        transition: 1s;
+    }
+
+    &:visited{
+        color: rgb(0, 174, 255)
+    }
+
+}
+
+.contacts__desc-contacts-item-info{
+    font-weight: 500;
+    color: #96969d;   
+}
