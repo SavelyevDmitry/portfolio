@@ -1668,6 +1668,9 @@ button {
     background-color: #f4f8f9;
   }
 }
+.contacts--page {
+  padding-top: 0;
+}
 .contacts__title-wrapper {
   text-align: center;
   padding-top: 60px;
@@ -2236,6 +2239,8 @@ button {
 @media (min-width: 1200px) {
   .header__nav-wrapper--project {
     background-color: #f4f8f9;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 .title--project {
@@ -2314,6 +2319,19 @@ button {
   .header__bg-img--project {
     height: unset;
     display: none;
+  }
+}
+.header__nav-wrapper--contacts {
+  margin-bottom: 50px;
+}
+@media (min-width: 768px) {
+  .header__nav-wrapper--contacts {
+    margin-bottom: 80px;
+  }
+}
+@media (min-width: 1200px) {
+  .header__nav-wrapper--contacts {
+    margin-bottom: 155px;
   }
 }
 /*# sourceMappingURL=main.css.map */
