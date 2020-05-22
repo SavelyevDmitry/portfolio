@@ -19,6 +19,7 @@
 }
 
 .sections-skills__desc{
+    width: 90%;
 
     // Планшет 
     @media(min-width: 768px){
@@ -37,12 +38,12 @@
     margin-bottom: 21px;
     line-height: 1.35;
     margin-bottom: 29px;
-    padding-top: 350px;
-    margin-top: -350px;
+    padding-top: 70px;
+    margin-top: -70px;
 
     // Планшет 
     @media(min-width: 768px){
-        margin-bottom: 21px;
+        margin-bottom: 24px;
         font-size: 32px;
     }
 
@@ -50,7 +51,7 @@
     @media(min-width: 1200px){
         line-height: unset;
         font-size: 40px;
-        margin-bottom: 25px;
+        margin-bottom: 29px;
     }
 }
 
@@ -69,6 +70,11 @@
 
 .section-skills__list{
     margin-bottom: 37px;
+
+    //Десктоп
+    @media(min-width: 1200px){
+        margin-bottom: 44px;
+    }
 }
 
 .section-skills__list-item{
@@ -83,15 +89,15 @@
 
     // Планшет 
     @media(min-width: 768px){
-        line-height: unset;
-        margin-bottom: 8px;
+        line-height: 1.35;
+        margin-bottom: 12px;
     }
 
     //Десктоп
     @media(min-width: 1200px){
         font-size: 24px;
         margin-left: 33px;
-        margin-bottom: 3px;
+        margin-bottom: 6px;
 
         &::after{
             content: "";
@@ -124,14 +130,34 @@
 }
 
 .section-skills__mail{
-    color: black;
-    text-decoration: underline;
+    position: relative;
+    z-index: 5;
+    color: rgb(0, 174, 255);
     font-size: 18px;
-    transition: 0.3s;
+    transition: 0.5s;
+
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 0;        
+        left: -3px;
+        width: 103%;
+        height: 2px;
+        background-color: rgb(0, 174, 255);
+        z-index: 0;
+        transition: 0.5s;
+    }
 
     &:hover{
-        text-decoration: underline;
         color: rgb(0, 174, 255); 
+    }
+
+    &:hover::after{
+        width: 0;
+    }
+
+    &:visited{
+        color: rgb(0, 174, 255);  
     }
 
     // Планшет 
@@ -142,5 +168,9 @@
     //Десктоп
     @media(min-width: 1200px){
         font-size: 24px;
+
+        &::after{
+            bottom: 2;
+        }
     }
 }

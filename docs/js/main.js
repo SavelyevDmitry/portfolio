@@ -24,28 +24,28 @@ $(document).ready(function(){
         }
     });
 
-    // Изменение размера карточек при фильтрации
-    const filterToggles = document.querySelectorAll('.section-portfolio__filters button'); // все кнопки-переключатели
-    const portfolioBigCards = document.querySelectorAll('.section-portfolio__project '); // вс карточки  работ
+    // // Изменение размера карточек при фильтрации
+    // const filterToggles = document.querySelectorAll('.section-portfolio__filters button'); // все кнопки-переключатели
+    // const portfolioBigCards = document.querySelectorAll('.section-portfolio__project '); // вс карточки  работ
 
-    for (let i = 0; i < filterToggles.length; i++) {
+    // for (let i = 0; i < filterToggles.length; i++) {
 
-        filterToggles[i].addEventListener('click', function () {
-            if (i == 0) {
+    //     filterToggles[i].addEventListener('click', function () {
+    //         if (i == 0) {
 
-                for (let j = 0; j < 2; j++) {
+    //             for (let j = 0; j < 2; j++) {
 
-                    portfolioBigCards[j].classList.add('section-portfolio__project--big')
-                }
+    //                 portfolioBigCards[j].classList.add('section-portfolio__project--big')
+    //             }
 
-            } else {
+    //         } else {
 
-                for (let j = 0; j < 2; j++) {
-                    portfolioBigCards[j].classList.remove('section-portfolio__project--big')
-                }
-            }
-        });
-    }
+    //             for (let j = 0; j < 2; j++) {
+    //                 portfolioBigCards[j].classList.remove('section-portfolio__project--big')
+    //             }
+    //         }
+    //     });
+    // }
 
     //fake-placeholder
     const formInputs = document.querySelectorAll('.contacts__form-field');

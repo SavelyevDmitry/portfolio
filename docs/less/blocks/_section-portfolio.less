@@ -5,13 +5,14 @@
 
     // Планшет 
     @media(min-width: 768px){
-
+        padding-top: 62px;
+        padding-bottom: 70px;
     }
 
     //Десктоп
     @media(min-width: 1200px){
-        padding-top: 98px;
-        padding-bottom: 125px;
+        padding-top: 95px;
+        padding-bottom: 78px;
     }
 }
 
@@ -19,7 +20,7 @@
     max-width: 360px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 40px;
+    margin-bottom: 45px;
     padding-top: 60px;
     margin-top: -60px;
 
@@ -184,8 +185,10 @@
     height: 50px;
     padding-bottom: 5px;
     border-radius: 25px;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.1);
     border: 2px solid white;
+    box-shadow: 0 0 5px white;
+    color: white;
     padding-left: 30px;
     padding-right: 30px;
     z-index: 1;
@@ -198,14 +201,13 @@
     opacity: 0;
 
     &:hover{
-        background-color: rgb(9, 224, 63);
-        border-color: rgb(9, 224, 63);
+        background-color: rgba(255, 255, 255, 0.3);
+        box-shadow: 0 0 15px white;
         color: white;
     }
 
     &:active{
         background-color: rgb(12, 172, 52);
-        border-color: rgb(12, 172, 52);
     }
 }
 

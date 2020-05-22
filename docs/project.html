@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;500;700;800&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <title>Портфолио Савельев Дмитрий</title>
+    </head>
+
+    <body>
+
+        <div id="overlay"></div>
+        
+        <header class=" header header--project">
+
+            <!-- Навигация -->
+            <div class="header__nav-wrapper header__nav-wrapper--project">
+
+                <a href="./index.html" class="header-logo">
+                    ДС
+                </a>
+
+                <nav class="header__nav">
+                    <a href="./index.html" class="header-logo">
+                        ДС
+                    </a>
+
+                    <a href="./index.html" class="header__nav-item">Главная</a>
+                    <a href="./project.html" class="header__nav-item">Работы</a>
+                    <a href="#" class="header__nav-item">Контакты</a>
+
+                    <div class="contacts-social">
+
+                        <a href="https://github.com/SavelyevDmitry" class="contacts-social-item contacts-social-item--github" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+
+                        <a href="https://t.me/Savelyev_ds" class="contacts-social-item contacts-social-item--telegram" target="_blank">
+                            <i class="fab fa-telegram-plane"></i>
+                        </a>
+                        
+                        <a href="https://vk.com/id48494494" class="contacts-social-item contacts-social-item--vk" target="_blank">
+                            <i class="fab fa-vk"></i>
+                        </a>
+
+                        <a href="https://www.facebook.com/profile.php?id=100022790342894" class="contacts-social-item contacts-social-item--facebook" target="_blank">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        
+                    </div>
+
+                    <a href="mailto:savelyev.ds@yandex.ru" class="section-skills__mail">savelyev.ds@yandex.ru</a>
+
+                </nav>
+
+                <nav class="header__social">
+                    <a href="#" class="fab fa-linkedin-in header__social-item"></a>
+                    <a href="https://github.com/SavelyevDmitry" class="fab fa-github header__social-item" target="_blank"></a>
+                    <a href="https://vk.com/id48494494" target="_blank" class="fab fa-vk header__social-item" target="_blank"></a>
+                </nav>
+
+                <div class="header__toggle-menu">
+                    <span></span>
+                </div>
+                
+            </div>
+            <!-- //Навигация -->
+            
+        </header>
+
+        <main>
+
+            <!-- Cекция портфолио -->
+            <section class="section-portfolio section-portfolio--project">
+
+                <!-- container -->
+                <div class="container">
+
+                    <div class="section-portfolio__title-wrapper section-portfolio__title-wrapper--project" id="title-portfolio">
+                        <h1 class="title title--project">Портфолио</h1>
+                    </div>
+
+                    <!-- Фильтры -->
+                    <div class="section-portfolio__filters none">
+                        <button class="section-portfolio__filters-item control-active" data-filter="all">Все работы</button>
+                        <button class="section-portfolio__filters-item" data-filter=".boots">Bootstrap</button>
+                        <button class="section-portfolio__filters-item" data-filter=".wp">WordPress</button>
+                        <button class="section-portfolio__filters-item" data-filter=".frontend">Frontend</button>
+                    </div>
+                    <!-- //Фильтры -->
+
+                    <!-- Работы -->
+                    <div class="section-portfolio__projects-wrapper" id="section-portfolio__projects-wrapper">
+
+                        <div class="section-portfolio__project section-portfolio__project--big mix frontend boots wp">
+                            <a href="https://savelyevdmitry.github.io/Portfolio/" class="section-portfolio__project-img" target="_blank">
+                                <img src="./img/portfolio/portfolio.jpg" alt="Сайт Unit">
+                                <button class="more-button">Смотреть проект</button>
+                            </a>
+                            <a href="https://savelyevdmitry.github.io/Portfolio/" class="section-portfolio__project-title" target="_blank">Верстка "Портфолио"</a>
+                            <p class="section-portfolio__project-desc">Верстка многостраничного сайта.</p>
+                        </div>
+
+                        <div class="section-portfolio__project section-portfolio__project--big mix frontend boots wp">
+                            <a href="https://savelyevdmitry.github.io/Unit/" class="section-portfolio__project-img" target="_blank">
+                                <img src="./img/portfolio/Unit.jpg" alt="Сайт Unit">
+                                <button class="more-button">Смотреть проект</button>
+                            </a>
+                            <a href="https://savelyevdmitry.github.io/Unit/" class="section-portfolio__project-title" target="_blank">Верстка "Unit"</a>
+                            <p class="section-portfolio__project-desc">Верстка лендинга.</p>
+                        </div>
+
+                        <div class="section-portfolio__project section-portfolio__project--big mix boots">
+                            <a href="https://savelyevdmitry.github.io/ForestTravel/" class="section-portfolio__project-img" target="_blank">
+                                <img src="./img/portfolio/forest.jpg" alt="Форест тревел">
+                                <button class="more-button">Смотреть проект</button>
+                            </a>                          
+                            <a href="https://savelyevdmitry.github.io/ForestTravel/" class="section-portfolio__project-title" target="_blank">Верстка “Форест тревел”</a>
+                            <p class="section-portfolio__project-desc">Верстка многостраничного сайта.</p> 
+                        </div>
+
+                    </div>
+                    <!-- //Работы -->
+
+                    <div class="section-skills__all-project-wrapper">
+                        <a href="#" class="section-skills__all-project">Смотреть все работы</a>
+                    </div>
+
+                </div>
+                <!-- //container -->
+
+            </section>
+            <!-- //Cекция портфолио -->
+           
+        </main>
+
+        <footer class="footer-project">
+            <div class="footer-project__content">
+
+                <div class="footer-project__title-wrapper">
+                    <h2 class="footer-project__title">За созданием сайта:</h2>
+                </div>
+
+                <p>обращайтесь на <a href="mailto:savelyev.ds@yandex.ru" class="section-skills__mail section-skills__mail--project">savelyev.ds@yandex.ru</a></p>
+
+                <div class="contacts-social">
+
+                    <a href="https://github.com/SavelyevDmitry" class="contacts-social-item contacts-social-item--github" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <a href="https://t.me/Savelyev_ds" class="contacts-social-item contacts-social-item--telegram" target="_blank">
+                        <i class="fab fa-telegram-plane"></i>
+                    </a>
+                    
+                    <a href="https://vk.com/id48494494" class="contacts-social-item contacts-social-item--vk" target="_blank">
+                        <i class="fab fa-vk"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/profile.php?id=100022790342894" class="contacts-social-item contacts-social-item--facebook" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    
+                </div>
+
+                <div class="header__bg-img header__bg-img--project">
+                    <img src="./img/header/header-bg.png" alt="картинка с горами">
+                </div>
+            </div>
+
+        </footer>
+
+        <!-- Vender scripts -->
+        <script src="./libs/jquery/jquery-3.5.0.min.js"></script>
+        <script src="./libs/mixitup-3/mixitup3/mixitup.min.js"></script>
+        <!-- // Vender scripts -->
+
+        <!-- User scripts -->
+        <script src="./js/main.js"></script>
+        <!-- // User scripts -->
+
+    </body>
+
+</html>

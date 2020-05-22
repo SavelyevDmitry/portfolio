@@ -82,7 +82,7 @@ button{
     }
 
     // Десктоп
-    @media (min-width: 1170px){
+    @media (min-width: 1200px){
         padding: 0;
     }
 }
@@ -90,6 +90,7 @@ button{
 .underline{
     position: relative;
     z-index: 2;
+    font-weight: 800;
 
     &::after{
         content: "";
@@ -183,23 +184,29 @@ button{
 }
 
 .button-blue{
+    text-decoration: none;
+    outline: none;
     display: none;
-    padding-left: 42px;
-    padding-right: 42px;
-    padding-top: 13px;
-    height: 64px;
-    color: black;
-
-    background-color: rgb(0, 174, 255);
+    padding: 15px 42px;
     border-radius: 32px;
-
-    font-size: 22px;
+    box-shadow: 0 0 40px 40px rgb(0, 174, 255) inset, 0 0 0 0 rgb(0, 174, 255), 0 0 3px 0 black;
     font-weight: 700;
-    transition: 0.5s;
+    font-size: 22px;
+    color: white;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
 
-    &:hover{
-        // box-shadow: 0 0 10px rgb(0, 225, 255);
-        box-shadow: 0 0 15px rgb(0, 174, 255);
+    &:hover {
+        box-shadow: 0 0 10px 0 rgb(0, 174, 255) inset, 0 0 10px 2px rgb(0, 174, 255);
+        color: rgb(0, 174, 255);
+    }
+
+    &:visited{
+        color: white;
+    }
+
+    &:visited:hover{
+        color: rgb(0, 174, 255);
     }
 
     //Десктоп
