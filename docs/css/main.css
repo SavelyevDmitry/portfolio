@@ -170,10 +170,10 @@ button {
   font-weight: 700;
   font-size: 22px;
   color: white;
-  -webkit-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.7s ease-in-out;
+  -o-transition: 0.7s ease-in-out;
+  -moz-transition: 0.7s ease-in-out;
+  transition: 0.7s ease-in-out;
   cursor: pointer;
 }
 .button-blue:hover {
@@ -756,29 +756,25 @@ button {
   font-size: 22px;
   text-align: center;
   font-weight: 700;
-  color: #524f4e;
+  color: #464646;
   background: white;
-  -webkit-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-     -moz-box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
-  -webkit-transition: .5s;
-  -o-transition: .5s;
-  -moz-transition: .5s;
-  transition: .5s;
+  -webkit-transition: .8s;
+  -o-transition: .8s;
+  -moz-transition: .8s;
+  transition: .8s;
 }
 .header__button-contacts:hover {
-  -webkit-box-shadow: 0 15px 20px rgba(8, 156, 224, 0.5);
-     -moz-box-shadow: 0 15px 20px rgba(8, 156, 224, 0.5);
-          box-shadow: 0 15px 20px rgba(8, 156, 224, 0.5);
-  color: #464646;
-  -webkit-transform: translateY(-7px);
-     -moz-transform: translateY(-7px);
-      -ms-transform: translateY(-7px);
-       -o-transform: translateY(-7px);
-          transform: translateY(-7px);
+  -webkit-box-shadow: 0 0 5px 0px #00aeff inset;
+     -moz-box-shadow: 0 0 5px 0px #00aeff inset;
+          box-shadow: 0 0 5px 0px #00aeff inset;
+  border: solid 4px #00aeff;
+  color: #00aeff;
 }
 .header__button-contacts:visited {
   color: #464646;
+}
+.header__button-contacts:visited:hover {
+  color: #00aeff;
 }
 @media (min-width: 1200px) {
   .header__button-contacts {
@@ -1200,7 +1196,7 @@ button {
 .section-portfolio__project-img {
   display: block;
   position: relative;
-  overflow: hidden hidden;
+  overflow: hidden;
   margin-bottom: 20px;
 }
 .section-portfolio__project-img::before {
@@ -1210,7 +1206,7 @@ button {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 174, 255, 0.6);
+  background-color: rgba(0, 165, 255, 0.8);
   -webkit-transform: translateY(100%);
      -moz-transform: translateY(100%);
       -ms-transform: translateY(100%);
@@ -1271,7 +1267,8 @@ button {
   color: white;
 }
 .more-button:active {
-  background-color: #0cac34;
+  background-color: white;
+  color: #00a5ff;
 }
 .section-portfolio__project-title {
   font-weight: 700;
