@@ -17,12 +17,12 @@ $(document).ready(function(){
         overLay.classList.remove('active');
     })
 
-    let containerEl = document.querySelector('#section-portfolio__projects-wrapper');
-    let mixer = mixitup(containerEl, {
-        classNames: {
-            block: ""
-        }
-    });
+    // let containerEl = document.querySelector('#section-portfolio__projects-wrapper');
+    // let mixer = mixitup(containerEl, {
+    //     classNames: {
+    //         block: ""
+    //     }
+    // });
 
     // // Изменение размера карточек при фильтрации
     // const filterToggles = document.querySelectorAll('.section-portfolio__filters button'); // все кнопки-переключатели
