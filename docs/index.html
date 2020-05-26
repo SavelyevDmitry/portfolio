@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@300;400;500;700;800&family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+        <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
         <link rel="stylesheet" href="./css/main.css">
         <title>Портфолио Савельев Дмитрий</title>
     </head>
@@ -393,7 +394,10 @@
                         <!-- Форма обратной связи -->
                         <div class="contacts__form-wrapper">
 
-                            <form action="mailto:savelyev.ds@yandex.ru" class="contacts__form">
+                            <form action="" class="contacts__form" id="contacts-form">
+                                <input type="hidden" name="project_name" value="https://savelyevdmitry.github.io/Portfolio/">
+                                <input type="hidden" name="admin_email" value="savelyev.ds@yandex.ru">
+                                <input type="hidden" name="email_from" value="info@savelyevdmitry.github.io">
 
                                 <div class="contacts__form-item">
                                     <input type="text" name="email" class="contacts__form-field">
@@ -411,10 +415,11 @@
                                 </div>
     
                                 <div class="contacts__form-button">
-                                    <input type="submit" value="Отправить" class=contacts__form-button-elem>
+                                    <input type="submit" value="Отправить" class="contacts__form-button-elem" name="form-button">
                                 </div>
     
                             </form>
+                            <div id="answer"></div>
 
                         </div>
                         <!-- //Форма обратной связи -->
@@ -446,6 +451,7 @@
         <!-- Vender scripts -->
         <script src="./libs/jquery/jquery-3.5.0.min.js"></script>
         <script src="./libs/mixitup-3/mixitup3/mixitup.min.js"></script>
+        <script src="./libs/jquery.validate/jquery.validate.js"></script>
         <!-- // Vender scripts -->
 
         <!-- User scripts -->

@@ -17,6 +17,7 @@ $(document).ready(function(){
         overLay.classList.remove('active');
     })
 
+    // // Изменение размера карточек при фильтрации
     // let containerEl = document.querySelector('#section-portfolio__projects-wrapper');
     // let mixer = mixitup(containerEl, {
     //     classNames: {
@@ -24,7 +25,6 @@ $(document).ready(function(){
     //     }
     // });
 
-    // // Изменение размера карточек при фильтрации
     // const filterToggles = document.querySelectorAll('.section-portfolio__filters button'); // все кнопки-переключатели
     // const portfolioBigCards = document.querySelectorAll('.section-portfolio__project '); // вс карточки  работ
 
@@ -63,5 +63,63 @@ $(document).ready(function(){
                 inputPlaceholder.classList.remove('active');
             }
         })
+    }
+
+    // FORM VALIDATE
+    $('#contacts-form').validate({
+        rules:{
+            email: {
+                required: true,
+                email: true
+            },
+
+            theme: {
+                required: true
+            },
+
+            message: {
+                required: true
+            }
+        },
+
+        messages: {
+            email: {
+                required: 'Введите ваш Email',
+                email: 'Неверно задан Email'            
+            },
+
+            theme: {
+                required: 'Введите тему сообщения'
+            },
+
+            message: {
+                required: 'Введите текст сообщения'
+            }
+        },
+        
+        submitHandler: function(form) {
+            ajaxFormSubmit();
+        }
+    });
+
+    function ajaxFormSubmit() {
+
+        let string = $("#contacts-form").serialize(); // Соханяем данные введенные в форму в строку.
+
+        //Формируем ajax запрос
+        $.ajax({
+            type: "POST", // Тип запроса - POST
+            url: "php/mail.php", // Куда отправляем запрос
+            data: string, // Какие даные отправляем, в данном случае отправляем переменную string
+
+            // Функция если все прошло успешно
+            success: function (html) {
+                $("#contacts-form").slideUp(800);
+                $('#answer').html(html);
+            }
+        });
+
+        // Чтобы по Submit больше ничего не выполнялось - делаем возврат false чтобы прервать цепчку срабатывания остальных функций
+        return false;
     }
 }) 

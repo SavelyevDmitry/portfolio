@@ -282,6 +282,12 @@ button {
 .none {
   display: none !important;
 }
+.error {
+  color: red;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: 'M PLUS 1p', sans-serif;
+}
 .header {
   padding-top: 22px;
   padding-bottom: 95px;
