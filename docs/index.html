@@ -14,8 +14,23 @@
     <body>
 
         <div id="overlay"></div>
+
+        <ul id="page-nav">
+            <li class="active">
+                <a href="#header"></a>
+            </li>
+            <li>
+                <a href="#portfolio"></a>
+            </li>
+            <li>
+                <a href="#how-work"></a>
+            </li>
+            <li>
+                <a href="#contacts"></a>
+            </li>
+        </ul>
         
-        <header class="header">
+        <header class="header" id="header">
 
             <!-- Навигация -->
             <div class="header__nav-wrapper">
@@ -122,6 +137,7 @@
                         </ul>
 
                         <a href="#title-portfolio" class="button-blue">Смотреть работы</a>
+                        <a href="" class="header__button-contacts">Скачать резюме</a>
 
                     </div>
 
@@ -161,7 +177,7 @@
         <main>
 
             <!-- Cекция портфолио -->
-            <section class="section-portfolio">
+            <section class="section-portfolio" id="portfolio">
 
                 <!-- container -->
                 <div class="container">
@@ -223,7 +239,7 @@
             <!-- //Cекция портфолио -->
 
             <!-- Cекция как я работаю -->
-            <section class="how-work">
+            <section class="how-work" id="how-work">
 
                 <!-- container -->
                 <div class="container">
@@ -325,7 +341,7 @@
             <!-- //Cекция как я работаю -->
 
             <!-- Cекция контакты -->
-            <section class="contacts">
+            <section class="contacts" id="contacts">
 
                 <!-- container -->
                 <div class="container">
@@ -395,9 +411,9 @@
                         <div class="contacts__form-wrapper">
 
                             <form action="" class="contacts__form" id="contacts-form">
-                                <input type="hidden" name="project_name" value="https://savelyevdmitry.github.io/Portfolio/">
+                                <input type="hidden" name="project_name" value="myportfolio.ru">
                                 <input type="hidden" name="admin_email" value="savelyev.ds@yandex.ru">
-                                <input type="hidden" name="email_from" value="info@savelyevdmitry.github.io">
+                                <input type="hidden" name="email_from" value="info@myportfolio.ru">
 
                                 <div class="contacts__form-item">
                                     <input type="text" name="email" class="contacts__form-field">
@@ -415,7 +431,7 @@
                                 </div>
     
                                 <div class="contacts__form-button">
-                                    <input type="submit" value="Отправить" class="contacts__form-button-elem" name="form-button">
+                                    <input type="submit" value="Отправить" class="contacts__form-button-elem">
                                 </div>
     
                             </form>
@@ -452,6 +468,7 @@
         <script src="./libs/jquery/jquery-3.5.0.min.js"></script>
         <script src="./libs/mixitup-3/mixitup3/mixitup.min.js"></script>
         <script src="./libs/jquery.validate/jquery.validate.js"></script>
+        <script src="./libs/nav.js/nav.js"></script>
         <!-- // Vender scripts -->
 
         <!-- User scripts -->
