@@ -215,16 +215,16 @@ button {
      -moz-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  -moz-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  -moz-transition: 0.5s;
+  transition: 0.5s;
 }
 .contacts-social-item:hover {
   cursor: pointer;
-  -webkit-box-shadow: 0 0 10px #000000;
-     -moz-box-shadow: 0 0 10px #000000;
-          box-shadow: 0 0 10px #000000;
+  -webkit-box-shadow: 0 0 8px black;
+     -moz-box-shadow: 0 0 8px black;
+          box-shadow: 0 0 8px black;
 }
 .contacts-social-item:last-child {
   margin-right: 0;
@@ -271,12 +271,12 @@ button {
 .contacts-social-item--vk:visited {
   color: white;
 }
-.contacts-social-item--facebook {
-  background-color: #3b5998;
+.contacts-social-item--whats {
+  background-color: #43d854;
   color: white;
-  font-size: 24px;
+  font-size: 31px;
 }
-.contacts-social-item--facebook:visited {
+.contacts-social-item--whats:visited {
   color: white;
 }
 .none {
@@ -873,6 +873,12 @@ button {
     margin-top: -158px;
   }
 }
+.vk:hover {
+  color: #4680C2;
+}
+.wa:hover {
+  color: #43d854;
+}
 .sections-skills__row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1253,11 +1259,11 @@ button {
   right: 0;
   bottom: 0;
   background-color: rgba(0, 165, 255, 0.8);
-  -webkit-transform: translateY(100%);
-     -moz-transform: translateY(100%);
-      -ms-transform: translateY(100%);
-       -o-transform: translateY(100%);
-          transform: translateY(100%);
+  -webkit-transform: translateY(110%);
+     -moz-transform: translateY(110%);
+      -ms-transform: translateY(110%);
+       -o-transform: translateY(110%);
+          transform: translateY(110%);
   -webkit-transition: 1s;
   -o-transition: 1s;
   -moz-transition: 1s;
