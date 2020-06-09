@@ -215,16 +215,16 @@ button {
      -moz-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   -moz-transition: 0.5s;
   transition: 0.5s;
 }
 .contacts-social-item:hover {
-  cursor: pointer;
-  -webkit-box-shadow: 0 0 8px black;
-     -moz-box-shadow: 0 0 8px black;
-          box-shadow: 0 0 8px black;
+  -webkit-box-shadow: 0 0 5px black;
+     -moz-box-shadow: 0 0 5px black;
+          box-shadow: 0 0 5px black;
 }
 .contacts-social-item:last-child {
   margin-right: 0;
@@ -255,6 +255,9 @@ button {
 .contacts-social-item--github:visited {
   color: black;
 }
+.contacts-social-item--github:hover {
+  color: #4d4d4d;
+}
 .contacts-social-item--telegram {
   background-color: #039be5;
   color: white;
@@ -262,6 +265,9 @@ button {
 }
 .contacts-social-item--telegram:visited {
   color: white;
+}
+.contacts-social-item--telegram:hover {
+  background-color: #1fb4fc;
 }
 .contacts-social-item--vk {
   background-color: #4d76a1;
@@ -271,6 +277,9 @@ button {
 .contacts-social-item--vk:visited {
   color: white;
 }
+.contacts-social-item--vk:hover {
+  background-color: #6a90b8;
+}
 .contacts-social-item--whats {
   background-color: #43d854;
   color: white;
@@ -278,6 +287,9 @@ button {
 }
 .contacts-social-item--whats:visited {
   color: white;
+}
+.contacts-social-item--whats:hover {
+  background-color: #6de17a;
 }
 .none {
   display: none !important;
@@ -291,13 +303,23 @@ button {
 #page-nav {
   display: none;
   position: fixed;
-  right: 60px;
+  right: 10px;
   top: 50%;
   z-index: 100;
 }
 @media (min-width: 1200px) {
   #page-nav {
     display: block;
+  }
+}
+@media (min-width: 1300px) {
+  #page-nav {
+    right: 30px;
+  }
+}
+@media (min-width: 1400px) {
+  #page-nav {
+    right: 50px;
   }
 }
 #page-nav li {
@@ -810,17 +832,17 @@ button {
   transition: .8s;
 }
 .header__button-contacts:hover {
-  -webkit-box-shadow: 0 0 2px 0px #00aeff inset;
-     -moz-box-shadow: 0 0 2px 0px #00aeff inset;
-          box-shadow: 0 0 2px 0px #00aeff inset;
-  border: solid 4px #00aeff;
-  color: #00aeff;
+  -webkit-box-shadow: 0 0 3px black;
+     -moz-box-shadow: 0 0 3px black;
+          box-shadow: 0 0 3px black;
+  border: solid 4px #797979;
+  color: #797979;
 }
 .header__button-contacts:visited {
   color: #464646;
 }
 .header__button-contacts:visited:hover {
-  color: #00aeff;
+  color: #606060;
 }
 @media (min-width: 1200px) {
   .header__button-contacts {
@@ -1208,10 +1230,10 @@ button {
   width: 100%;
   font-size: 22px;
   max-width: 360px;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  -moz-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  -moz-transition: 1s;
+  transition: 1s;
   text-align: center;
   margin-bottom: 55px;
 }
@@ -1219,9 +1241,14 @@ button {
   -webkit-box-shadow: 0 0 8px #00aeff;
      -moz-box-shadow: 0 0 8px #00aeff;
           box-shadow: 0 0 8px #00aeff;
-  -webkit-border-radius: 0 0 15px 15px;
-     -moz-border-radius: 0 0 15px 15px;
-          border-radius: 0 0 15px 15px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+     -moz-border-radius: 10px 10px 10px 10px;
+          border-radius: 10px 10px 10px 10px;
+}
+.section-portfolio__project:hover .section-portfolio__project-img {
+  -webkit-border-radius: 10px 10px 0 0;
+     -moz-border-radius: 10px 10px 0 0;
+          border-radius: 10px 10px 0 0;
 }
 @media (min-width: 768px) {
   .section-portfolio__project {
@@ -1250,6 +1277,10 @@ button {
   position: relative;
   overflow: hidden;
   margin-bottom: 20px;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  -moz-transition: 1s;
+  transition: 1s;
 }
 .section-portfolio__project-img::before {
   content: "";
@@ -1321,6 +1352,42 @@ button {
 .more-button:active {
   background-color: white;
   color: #00a5ff;
+}
+.section-portfolio__project.section-portfolio__project--big img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 360px;
+  height: 240px;
+}
+@media (min-width: 768px) {
+  .section-portfolio__project.section-portfolio__project--big img {
+    width: 340px;
+    height: 227px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-portfolio__project.section-portfolio__project--big img {
+    width: 555px;
+    height: 370px;
+  }
+}
+.section-portfolio__project img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 360px;
+  height: 240px;
+}
+@media (min-width: 768px) {
+  .section-portfolio__project img {
+    width: 340px;
+    height: 227px;
+  }
+}
+@media (min-width: 1200px) {
+  .section-portfolio__project img {
+    width: 360px;
+    height: 240px;
+  }
 }
 .section-portfolio__project-title {
   font-weight: 700;
@@ -1858,15 +1925,6 @@ button {
   -webkit-box-shadow: 0px 28px 100px 0px rgba(194, 219, 235, 0.6);
      -moz-box-shadow: 0px 28px 100px 0px rgba(194, 219, 235, 0.6);
           box-shadow: 0px 28px 100px 0px rgba(194, 219, 235, 0.6);
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  -moz-transition: 1s;
-  transition: 1s;
-}
-.contacts__form:hover {
-  -webkit-box-shadow: 0px 28px 100px 0px rgba(0, 174, 255, 0.404);
-     -moz-box-shadow: 0px 28px 100px 0px rgba(0, 174, 255, 0.404);
-          box-shadow: 0px 28px 100px 0px rgba(0, 174, 255, 0.404);
 }
 @media (min-width: 1200px) {
   .contacts__form {

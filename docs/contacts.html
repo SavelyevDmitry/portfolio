@@ -57,9 +57,9 @@
                 </nav>
 
                 <nav class="header__social">
-                    <a href="#" class="fab fa-linkedin-in header__social-item"></a>
                     <a href="https://github.com/SavelyevDmitry" class="fab fa-github header__social-item" target="_blank"></a>
-                    <a href="https://vk.com/id48494494" target="_blank" class="fab fa-vk header__social-item" target="_blank"></a>
+                    <a href="https://vk.com/id48494494" target="_blank" class="fab fa-vk header__social-item vk" target="_blank"></a>
+                    <a href="https://wa.me/89167321676" class="fab fa-whatsapp header__social-item wa"></a>
                 </nav>
 
                 <div class="header__toggle-menu">
@@ -143,7 +143,10 @@
                     <!-- Форма обратной связи -->
                     <div class="contacts__form-wrapper">
 
-                        <form action="mailto:savelyev.ds@yandex.ru" class="contacts__form">
+                        <form action="" class="contacts__form" id="contacts-form">
+                            <input type="hidden" name="project_name" value="myportfolio.ru">
+                            <input type="hidden" name="admin_email" value="savelyev.ds@yandex.ru">
+                            <input type="hidden" name="email_from" value="info@myportfolio.ru">
 
                             <div class="contacts__form-item">
                                 <input type="text" name="email" class="contacts__form-field">
@@ -161,10 +164,11 @@
                             </div>
 
                             <div class="contacts__form-button">
-                                <input type="submit" value="Отправить" class=contacts__form-button-elem>
+                                <input type="submit" value="Отправить" class="contacts__form-button-elem">
                             </div>
 
                         </form>
+                        <div id="answer"></div>
 
                     </div>
                     <!-- //Форма обратной связи -->
