@@ -22,9 +22,9 @@
             <li>
                 <a href="#portfolio"></a>
             </li>
-            <li>
+            <!-- <li>
                 <a href="#how-work"></a>
-            </li>
+            </li> -->
             <li>
                 <a href="#contacts"></a>
             </li>
@@ -101,7 +101,7 @@
                         </h1>
 
                         <div class="header__name-desc">
-                            Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнением ТЗ. 
+                            Frontend-разработчик (React)
                         </div>
 
                         <div class="header__info-buttons">
@@ -126,17 +126,20 @@
                 <div class="sections-skills__row">
                     <div class="sections-skills__desc">
 
-                        <h3 class="sections-skills__title-list" id="skills">Что я умею:</h3>
+                        <h3 class="sections-skills__title-list" id="skills">Освоенные навыки:</h3>
                         
                         <ul class="section-skills__list">
-                            <li class="section-skills__list-item">Pixel perfect, полное соответствие макету;</li>
-                            <li class="section-skills__list-item">Кроссбраузерная адаптивная верстка;</li>
-                            <li class="section-skills__list-item">Верстаю с сеткой или без;</li>
-                            <li class="section-skills__list-item">С Bootstrap и без него;</li>
-                            <li class="section-skills__list-item">Ситема контроля версий GitHub;</li>
-                            <li class="section-skills__list-item">Использование препроцессоров LESS, SCSS, SASS;</li>
-                            <li class="section-skills__list-item">Использование Gulp-сборок и шаблонизатора Pug.</li>
-
+                            <li class="section-skills__list-item">HTML, CSS, JavaScript;</li>
+                            <li class="section-skills__list-item">React, Redux, TypeScript; </li>
+                            <li class="section-skills__list-item">Препроцессоры LESS, SCSS, SASS;</li>
+                            <li class="section-skills__list-item">Работа с Git;</li>
+                            <li class="section-skills__list-item">Bootstrap;</li>
+                            <li class="section-skills__list-item">Шаблонизатор Pug; </li>
+                            <li class="section-skills__list-item">Gulp-сборка;</li>
+                            <li class="section-skills__list-item">БЭМ</li>
+                            <li class="section-skills__list-item">Адаптивная, кроссбраузерная, валидная и доступная верстка</li>
+                            <li class="section-skills__list-item">Figma, Photoshop на уровне работы с макетом</li>
+                            <li class="section-skills__list-item">PixelPerfect.</li>
                         </ul>
 
                         <a href="#title-portfolio" class="button-blue">Смотреть работы</a>
@@ -202,6 +205,15 @@
                     <div class="section-portfolio__projects-wrapper" id="section-portfolio__projects-wrapper">
 
                         <div class="section-portfolio__project section-portfolio__project--big mix frontend boots wp">
+                            <a href="https://savelyevdmitry.github.io/CityMed-Pages/" class="section-portfolio__project-img" target="_blank">
+                                <img src="./img/portfolio/city.jpg" alt="Сайт медклиники СитиМед">
+                                <button class="more-button">Смотреть проект</button>
+                            </a>
+                            <a href="https://savelyevdmitry.github.io/CityMed-Pages/" class="section-portfolio__project-title" target="_blank">Верстка "CityMed"</a>
+                            <p class="section-portfolio__project-desc">Gulp-сборка многостраничного сайта с шаблонизатором Pug, препроцессором SCSS, использованием плагинов OwlCarousel, Slider и таймера обратного отсчета.</p>
+                        </div>
+
+                        <div class="section-portfolio__project section-portfolio__project--big mix frontend boots wp">
                             <a href="https://savelyevdmitry.github.io/Portfolio/" class="section-portfolio__project-img" target="_blank">
                                 <img src="./img/portfolio/portfolio.jpg" alt="Сайт Unit">
                                 <button class="more-button">Смотреть проект</button>
@@ -210,8 +222,17 @@
                             <p class="section-portfolio__project-desc">Адаптивная верстка многостраничного сайта с мобильной и фиксированной навигацией, формой обратной связи и использованием плагина MixItUp.</p>
                         </div>
 
-                        <div class="section-portfolio__project section-portfolio__project--big mix frontend boots wp">
-                            <a href="https://savelyevdmitry.github.io/unit/" class="section-portfolio__project-img" target="_blank">
+                        <div class="section-portfolio__project mix boots">
+                            <a href="https://savelyevdmitry.github.io/Hospital-web/" class="section-portfolio__project-img" target="_blank">
+                                <img src="./img/portfolio/Hospital.jpg" alt="Сайт медклиники Revo">
+                                <button class="more-button">Смотреть проект</button>
+                            </a>                          
+                            <a href="https://savelyevdmitry.github.io/Hospital-web/" class="section-portfolio__project-title" target="_blank">Верстка "Hospital-Revo"</a>
+                            <p class="section-portfolio__project-desc">Адаптивная верстка лендинга</p> 
+                        </div>
+
+                        <div class="section-portfolio__project mix frontend boots wp">
+                            <a href="https://savelyevdmitry.github.io/Unit/" class="section-portfolio__project-img" target="_blank">
                                 <img src="./img/portfolio/Unit.jpg" alt="Сайт Unit">
                                 <button class="more-button">Смотреть проект</button>
                             </a>
@@ -228,24 +249,6 @@
                             <p class="section-portfolio__project-desc">Верстка многостраничного сайта.</p> 
                         </div>
 
-                        <div class="section-portfolio__project mix boots">
-                            <a href="https://savelyevdmitry.github.io/Card-book/" class="section-portfolio__project-img" target="_blank">
-                                <img src="./img/portfolio/card-book.png" alt="Форест тревел">
-                                <button class="more-button">Смотреть проект</button>
-                            </a>                          
-                            <a href="https://savelyevdmitry.github.io/Card-book/" class="section-portfolio__project-title" target="_blank">Верстка карточки книги</a>
-                            <p class="section-portfolio__project-desc">Верстка карточки товара с использованием PixelPerfect</p> 
-                        </div>
-
-                        <div class="section-portfolio__project mix boots">
-                            <a href="https://savelyevdmitry.github.io/Card-moto/" class="section-portfolio__project-img" target="_blank">
-                                <img src="./img/portfolio/card-moto.png" alt="Форест тревел">
-                                <button class="more-button">Смотреть проект</button>
-                            </a>                          
-                            <a href="https://savelyevdmitry.github.io/Card-moto/" class="section-portfolio__project-title" target="_blank">Верстка карточки мотоцикла</a>
-                            <p class="section-portfolio__project-desc">Верстка карточки товара с использованием PixelPerfect</p> 
-                        </div>
-
                     </div>
                     <!-- //Работы -->
 
@@ -260,16 +263,14 @@
             <!-- //Cекция портфолио -->
 
             <!-- Cекция как я работаю -->
-            <section class="how-work" id="how-work">
+            <!-- <section class="how-work" id="how-work">
 
-                <!-- container -->
                 <div class="container">
 
                     <div class="how-work__title">
                         <h2 class="title title--how-work">Как я работаю</h2>
                     </div>
 
-                    <!-- Обертка -->
                     <div class="how-work__stages">
 
                         <div class="how-work__stage-item">
@@ -353,12 +354,10 @@
                         </div>
 
                     </div>
-                    <!-- //Обертка -->
 
                 </div>
-                <!-- container -->
 
-            </section>
+            </section> -->
             <!-- //Cекция как я работаю -->
 
             <!-- Cекция контакты -->
@@ -477,7 +476,7 @@
 
                 <p class="footer__who">© 2020 — Дмитрий Савельев</p>
                 <p class="footer__text">
-                    Веб-разработчик из Москвы, занимаюсь версткой и созданием сайтов. <br>
+                    Frontend-разработчик из Москвы<br>
                 </p>
 
             </div>

@@ -1319,8 +1319,7 @@ button {
       -ms-transform: translate(-50%, -50%);
        -o-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  height: 50px;
-  padding-bottom: 5px;
+  padding: 10px 30px;
   -webkit-border-radius: 25px;
      -moz-border-radius: 25px;
           border-radius: 25px;
@@ -1330,8 +1329,6 @@ button {
      -moz-box-shadow: 0 0 5px white;
           box-shadow: 0 0 5px white;
   color: white;
-  padding-left: 30px;
-  padding-right: 30px;
   z-index: 1;
   font-family: 'M PLUS 1p', sans-serif;
   font-size: 22px;
